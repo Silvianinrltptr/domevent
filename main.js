@@ -28,3 +28,20 @@ const hideaboutalert = () => {
     //kita atur element dari element tersebut jadikan tersembunyi
     AboutAlert.style.display = 'none'
 }
+
+//kita akan buat element HTML
+//MENGGUNAKAN JAVA SCRIPY
+
+//tangkap element
+let gallery = document.getElementById('container-gallery')
+let img = 100
+
+//INSERT HTML SYNTAX into GALLERY CONTAINER
+
+for (let i = 0; i < 110; i++) {
+    gallery.innerHTML += `
+    <img src="https://picsum.photos/seed/${img++}/100" />    
+    `
+
+
+}
